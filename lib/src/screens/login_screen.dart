@@ -65,7 +65,7 @@ class LoginScreen extends StatelessWidget {
           onPressed: !snapshot.hasData
               ? null
               : () {
-                  print("Hello there!");
+                  bloc.submit();
                 },
           child: Text("Submit"),
         );

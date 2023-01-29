@@ -4,7 +4,7 @@ import 'validators.dart';
 // bloc.emailController.sink.add() // Too hard to understand
 // bloc.changeEmail() // Easier
 
-class Bloc with Validators {
+class Bloc extends Object with Validators {
   final _email = StreamController<String>();
   final _password = StreamController<String>();
 
@@ -21,4 +21,4 @@ class Bloc with Validators {
   }
 }
 
-final bloc = Bloc();
+// final bloc = Bloc();
